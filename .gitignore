@@ -4,3 +4,4 @@ eval_0/
 events.out.tfevents.*
 graph.pbtxt
 model.ckpt-*
+faster_rcnn_inception_v2_coco_2018_01_28
