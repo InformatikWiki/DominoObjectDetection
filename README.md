@@ -1,4 +1,6 @@
-# DominoObjectDetection
+# Domino Object Detection
+
+![Example](./Example.png)
 
 To create my object detection model, i used following tutorials from Gilbert Tanner:
 
@@ -11,6 +13,8 @@ Thanks for the nice tutorials.
 Using Tensorflow 2, I run in some issues to run the training
 
 `AttributeError: module 'tensorflow' has no attribute 'contrib'`
+
+## Dockerfile
 
 Therefore I created a [Dockerfile](./Dockerfile) to install and run the training procedure.
 
@@ -26,6 +30,8 @@ Change the directory:
 
 `cd /my_git_path/`
 
+## Training
+
 Run the training procedure:
 
 `python model_main.py --logtostderr --model_dir=training/ --pipeline_config_path=training/faster_rcnn_inception_v2_pets.config`
@@ -33,6 +39,8 @@ Run the training procedure:
 During the training, you can open the Tensorboard:
 
 `tensorboard --logdir=training`
+
+## Export and run Object Detection
 
 To export the inference graph, type:
 
