@@ -36,7 +36,7 @@ During the training, you can open the Tensorboard:
 
 To export the inference graph, type:
 
-`python /tensorflow/models/research/object_detection/export_inference_graph.py --input_type image_tensor --pipeline_config_path /gilbert/training/faster_rcnn_inception_v2_pets.config --trained_checkpoint_prefix /gilbert/training/model.ckpt-XXXX --output_directory /gilbert/inference_graph`
+`python /tensorflow/models/research/object_detection/export_inference_graph.py --input_type image_tensor --pipeline_config_path /my_git_path/training/faster_rcnn_inception_v2_pets.config --trained_checkpoint_prefix /my_git_path/training/model.ckpt-XXXX --output_directory /my_git_path/inference_graph`
 
 Finally, run the object detection with your trained model:
 
