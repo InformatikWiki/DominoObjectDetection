@@ -32,7 +32,7 @@ Change the directory:
 
 ## Training
 
-Download and unpack faster_rcnn_inception_v2_coco_xxx.tar.gz from [Tensorflow detection model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md) to the training folder.
+Download and unpack **faster_rcnn_inception_v2_coco_xxx.tar.gz** from [Tensorflow detection model zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md) to the training folder.
 
 Run the training procedure:
 
