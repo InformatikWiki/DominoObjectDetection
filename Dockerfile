@@ -5,7 +5,7 @@ RUN apt-get update \
   && cd /usr/local/bin \
   && ln -s /usr/bin/python3 python \
   && pip3 install --upgrade pip
-# RUN apt-get update && yes | apt-get upgrade
+RUN apt-get update && yes | apt-get upgrade
 
 RUN mkdir -p /tensorflow/models
 
@@ -13,9 +13,9 @@ RUN apt-get install -y git python-pip
 RUN pip install --upgrade pip
 
 RUN pip install tensorflow==1.14
-#RUN pip install numpy==1.16.4
-#RUN pip install --user gast==0.2.2
-#RUN pip install tensorflow-gpu==1.14
+RUN pip install numpy==1.16.4
+RUN pip install --user gast==0.2.2
+RUN pip install tensorflow-gpu==1.14
 
 RUN apt-get install -y protobuf-compiler python-pil python-lxml
 
