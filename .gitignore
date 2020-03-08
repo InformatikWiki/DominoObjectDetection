@@ -1,0 +1,6 @@
+inference_graph/
+checkpoint
+eval_0/
+events.out.tfevents.*
+graph.pbtxt
+model.ckpt-*
